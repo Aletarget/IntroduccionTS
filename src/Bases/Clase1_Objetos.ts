@@ -1,7 +1,7 @@
-interface Pokemon{
-    id: number,
-    name: string,
-    age?: number,
+interface PokemonInterface{
+  id: number,
+  name: string,
+  age?: number,
 }
 
 // export const charmander:Pokemon = {
@@ -11,19 +11,19 @@ interface Pokemon{
 
 
 export class PokemonTrainer {
-    private pokemons: Pokemon[] = []
+    private pokemons: PokemonInterface[] = []
     constructor(
-        private id: number,
-        private name: string,
-        private age: number
+        readonly id: number,
+        readonly name: string,
+        readonly age: number
     ){}
 
 
-    setPokemon(pokemon: Pokemon){
+    setPokemon(pokemon: PokemonInterface){
         this.pokemons.push(pokemon);
     }
 
-    getPokemon(): Pokemon[]{
+    getPokemon(): PokemonInterface[]{
         return this.pokemons;
     }
 }

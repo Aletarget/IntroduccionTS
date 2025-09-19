@@ -1,5 +1,6 @@
 import './style.css'
 import { Juan } from './Bases/Clase1_Objetos.ts'
+import { mostrarData, mostrarDatosMedianteAsync, obtenerDatosMediantePromesa, pokeapi } from './Bases/Clase2_Callbacks.ts';
 
 // console.log({data: charmander });
 
@@ -11,7 +12,7 @@ const div = document.getElementById('app')
 div!.innerHTML= `
 <div>
   <h1>
-    ${Juan.name}
+    Hola ${Juan.name}, actualmente cuentas con los siguientes pokemons
   </h1>
   <br>
   <span>
@@ -21,8 +22,6 @@ div!.innerHTML= `
   </span>
 </div>
 `
-
-
-
-
-  
+obtenerDatosMediantePromesa;
+mostrarDatosMedianteAsync;
+pokeapi;
