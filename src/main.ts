@@ -1,6 +1,7 @@
 import './style.css'
 import { Juan } from './Bases/Clase1_Objetos.ts'
 import { mostrarData, mostrarDatosMedianteAsync, obtenerDatosMediantePromesa, pokeapi } from './Bases/Clase2_Callbacks.ts';
+import { Pokemon } from './Bases/Clase3_Async.ts';
 
 // console.log({data: charmander });
 
@@ -22,6 +23,6 @@ div!.innerHTML= `
   </span>
 </div>
 `
-obtenerDatosMediantePromesa;
 mostrarDatosMedianteAsync;
 pokeapi;
+Pokemon;

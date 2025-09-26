@@ -65,6 +65,7 @@ export const mostrarDatosMedianteAsync = async (): Promise<void> =>{
     }
 }
 
+
 console.log("Antes de la funcion asincrona");
 mostrarDatosMedianteAsync();
 console.log("Despues de la funcion asincrona");
